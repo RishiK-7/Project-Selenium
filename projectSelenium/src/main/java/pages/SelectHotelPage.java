@@ -45,5 +45,10 @@ public class SelectHotelPage extends BaseClass{
 		return tprice.getAttribute("value");
 		
 	}
+	
+	public static String title() {
+		String title = driver.getTitle();
+		return title;
+	}
 
 }

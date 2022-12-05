@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -95,6 +96,21 @@ public class SearchHotel extends BaseClass{
 		String title = driver.getTitle();
 		return title;
 	}
+	
+	public static void search() {
+		driver.findElement(By.id("Submit")).click();
+		}
+	
+	public static String dateError() {
+		String error = driver.findElement(By.id("checkin_span")).getText();
+		return error;
+	}
+	
+	public static String dateBlank() {
+		String error = driver.findElement(By.id("checkin_span")).getText();
+		return error;
+	}
+	
 	
 public void hotel() {
 		

@@ -62,9 +62,17 @@ public class LoginSteps extends BaseClass{
 
 	@Then("login should be fail")
 	public void login_should_be_fail() {
-	    
+		String error = LogInPage.error();
+	    Assert.assertTrue(error.contains("Invalid Login details or Your Password"));
 	    
 	}
 	
+	@Then("login error should be shown")
+	public void login_error_should_be_shown() {
+	    String username = LogInPage.nameBlankError();
+	    Assert.assertTrue(username.contains("Enter"));
+	    
+		
+	}
 
 }

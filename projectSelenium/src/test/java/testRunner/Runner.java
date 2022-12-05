@@ -8,9 +8,9 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 //		dryRun = true,
 		 
 //		monochrome = true
-		glue = {"steps", "hooks"}
-//		plugin = {"pretty", "html:reports", "json:reports/result.json"
-//				,"junit:reports/result.xml"}
+		glue = {"steps", "hooks"},
+		plugin = {"pretty", "html:reports", "json:reports/result.json"
+				,"junit:reports/result.xml"}
 		
 		
 		

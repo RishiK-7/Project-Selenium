@@ -20,5 +20,23 @@ Examples:
 |GreensAnna1 |rishik7     |
 |rishik7     |  rishik7   |
 
+Scenario Outline: Login with blank credentials
+
+Given user navigate to the application site
+And user enters Invalid "<username>" and "<password>"
+When user clicks on login button
+Then login error should be shown
+
+Examples:
+|username    |password    |
+|            |GreensAnna1 | #blank username
+|GreensAnna1 |            | #blank password
+|            |            | #blank username and password
+
+
+
+
+
+
 
 
