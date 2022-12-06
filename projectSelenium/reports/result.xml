@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" time="0"/>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="0.114461">
+    <testcase classname="match search results" name="to match search result" time="0.114461">
+        <system-out><![CDATA[Given user is on search result page.........................................passed
+When user checks result with search inputs..................................passed
+Then details should be matched..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

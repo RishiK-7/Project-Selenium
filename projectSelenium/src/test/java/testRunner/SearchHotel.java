@@ -4,13 +4,13 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-		features = {"features/"},
+		features = {"features/searchHotel.feature"},
 		
 //		dryRun = true,
 		 
 //		monochrome = true
 		glue = { "steps", "hooks"},
-//		tags = {"not @bag"}
+		tags = {"@reg"},
 		plugin = {"pretty", "html:reports", "json:reports/result.json"
 				,"junit:reports/result.xml"}
 		
@@ -18,11 +18,6 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
 		
 		)
 
-
-
-
-public class Runner extends AbstractTestNGCucumberTests{
-	
-	
+public class SearchHotel extends AbstractTestNGCucumberTests{
 
 }

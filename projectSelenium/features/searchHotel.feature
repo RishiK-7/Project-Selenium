@@ -1,8 +1,9 @@
 Feature: Hotel search function test
 
-Background:
-Given user enters valid username and password
-And user clicks on login button
+
+#Background:
+#Given user enters valid username and password
+#And user clicks on login button
 
 @reg
 Scenario: search hotel test 
@@ -25,4 +26,3 @@ Examples:
 |01/04/2023| 01/03/2023|  #month as after out
 |01/03/2023| 01/04/2022|  #year as after out
 |01/01/2021| 01/01/2022|  #before current date
-

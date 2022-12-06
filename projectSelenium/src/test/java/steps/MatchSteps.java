@@ -26,7 +26,7 @@ public class MatchSteps extends SelectHotelPage{
 		Assert.assertTrue(departureDate().contains("05/03/2023"));
 		Assert.assertTrue(days().contains("4"));
 		Assert.assertTrue(roomType().contains("Standard"));
-	    
+	    System.out.println("match results");
 	}
 
 	@Then("details should be matched")

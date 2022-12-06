@@ -1,1 +1,75 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "to match search result",
+        "description": "",
+        "id": "match-search-results;to-match-search-result",
+        "after": [
+          {
+            "result": {
+              "duration": 48100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.screenShot(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3278200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on search result page",
+            "match": {
+              "location": "MatchSteps.user_is_on_search_result_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 111063800,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user checks result with search inputs",
+            "match": {
+              "location": "MatchSteps.user_checks_result_with_search_inputs()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 24000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "details should be matched",
+            "match": {
+              "location": "MatchSteps.details_should_be_matched()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@reg"
+          }
+        ]
+      }
+    ],
+    "name": "match search results",
+    "description": "",
+    "id": "match-search-results",
+    "keyword": "Feature",
+    "uri": "features\\matchResult.feature",
+    "tags": []
+  }
+]

@@ -4,6 +4,8 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeSuite;
 
 import basePackage.BaseClass;
 import cucumber.api.Scenario;
@@ -13,7 +15,7 @@ import cucumber.api.java.Before;
 public class Hooks extends BaseClass{
 	
 	
-@Before
+	@Before ("@login") 
 public void browserLaunch() {
 		
 		driver = new ChromeDriver();
@@ -35,9 +37,10 @@ public void browserLaunch() {
 	}
 		}
 	
-	@After (order = 2)
-	 public void quit() throws InterruptedException {
+	@AfterSuite 
+	 public void quit(Scenario scenario) throws InterruptedException {
 		Thread.sleep(2000);
+		System.out.println(scenario.getName());
 		 driver.quit();
 	 }
 
