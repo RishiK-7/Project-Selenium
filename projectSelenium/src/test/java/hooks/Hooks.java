@@ -13,7 +13,7 @@ import cucumber.api.java.Before;
 public class Hooks extends BaseClass{
 	
 	
-@Before	
+@Before
 public void browserLaunch() {
 		
 		driver = new ChromeDriver();

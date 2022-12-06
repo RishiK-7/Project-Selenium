@@ -1,5 +1,7 @@
 Feature: Login function test
 
+
+@reg @smoke
 Scenario: Login with valid credentials
 
 Given user navigate to the application site
@@ -7,6 +9,7 @@ And user enters valid username and password
 When user clicks on login button
 Then login should be success
 
+@neg
 Scenario Outline: Login with invalid credentials
 
 Given user navigate to the application site
@@ -20,6 +23,8 @@ Examples:
 |GreensAnna1 |rishik7     |
 |rishik7     |  rishik7   |
 
+
+@neg
 Scenario Outline: Login with blank credentials
 
 Given user navigate to the application site
